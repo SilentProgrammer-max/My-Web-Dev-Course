@@ -1,0 +1,131 @@
+.logo img {
+  width: 164px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Segoe UI";
+}
+
+.right ul {
+  display: flex;
+  gap: 34px;
+}
+
+.right ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.right ul li span {
+  padding: 0 5px;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  margin: 70px;
+  font-family: "Segoe UI";
+  padding-top: 5px;
+  padding-bottom: 50px;
+  font-size: 24px;
+}
+.first span {
+  font-size: 48px;
+}
+section span img {
+  margin: 0 23px;
+}
+.first p {
+  font-size: 23px;
+  width: 50vw;
+  text-align: center;
+}
+.btn {
+  background-color: #00b6d1;
+  padding: 14px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+      filter: brightness(0.9);
+  box-shadow: none;
+}
+.flex {
+  display: flex;
+}
+.small {
+  font-size: 12px;
+  font-family: 'Segoe UI';
+}
+.second {
+  max-width: 60vw;
+  margin: auto;
+}
+.item {
+  padding: 38px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 0;
+  align-items: flex-start;
+
+}
+.item {
+  position: relative;
+}
+.item p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.green{
+    background-color: #5cb85c;
+}
+.item-lang{
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 40px;
+    padding: 46px;
+    font-family: 'Segoe UI';
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:12px;
+}
+.download img{
+    padding: 0 10px;
+}
+.a{
+    font-size: 24px;
+}
+.download{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    font-family: 'Segoe UI';
+}
+@media screen and (max-width: 1145px) {
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:12px;
+    }
+}
