@@ -1,0 +1,264 @@
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Content Style */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px;
+  font-size: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(226, 247, 255);
+}
+.nav {
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding: 20px;
+  margin: 0px;
+  cursor: pointer;
+}
+.nav li {
+  color: rgb(255, 255, 255);
+}
+.nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.nav h2 {
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif; /* Logo style */
+  font-size: 24px;
+  color: white;
+  margin-right: auto;
+  cursor: pointer;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style: none;
+  padding: 9px 60px;
+  margin: 0;
+}
+.nav:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(4, 44, 22);
+}
+.nav ul li:hover {
+  /* background-color: rgb(4, 44, 22); */
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(0, 255, 115);
+  font-size: 18px;
+}
+.nav h2:hover {
+  /* background-color: rgb(12, 4, 49); */
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(0, 255, 115);
+  font-size: 25px;
+}
+.card {
+  /* background-color: #02140d; */
+  border: 1px solid #042216;
+  width: 470px;
+  height: 660px;
+  border-radius: 30px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  padding: 10px;
+}
+.img img {
+  border-radius: 20px;
+}
+.capsules {
+  display: flex;
+  padding: 0 28px 0 25px;
+  cursor: pointer;
+}
+.capsules span {
+  border: 1px solid rgb(106, 255, 173);
+  padding: 2px 14px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-family: "Baloo 2", sans-serif;
+  margin-right: 10px;
+  color: white;
+  transition: all 0.3s ease; /* smooth animation */
+}
+.content {
+  padding: 20px 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 13px;
+}
+.content p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+.content h2 {
+  margin-bottom: 7px;
+  font-family: "Poppins", sans-serif;
+}
+.button {
+  text-align: center;
+}
+.button button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgb(65, 255, 166);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  border: none;
+}
+.button button:hover {
+  background-color: #042216;
+  color: rgb(65, 255, 166);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(105, 255, 173);
+}
+.cards {
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsive wrapping */
+  padding: 40px;
+}
+.content1 {
+  border: 1px solid #042216;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 70px;
+}
+.content1 h2 {
+  margin-bottom: 7px;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  position: fixed; /* screen par fixed position */
+  top: 84%; /* screen ke vertical center par */
+  right: 20px; /* screen ke right se 20px door */
+  /* transform: translateY(-50%); exact center align karne ke liye */
+  width: 100px; /* logo ki width set kar sakti ho */
+  height: 100px; /* agar chahiye toh height bhi set karo */ /* circle shape agar nahi already hai */
+  z-index: 100; /* ensure kare ke logo sabse upar rahe */
+}
+.content1 p {
+  font-family: "Poppins", sans-serif;
+}
+.card:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(4, 44, 22);
+}
+.capsules:hover {
+  /* background-color: rgb(0, 0, 0); */
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(4, 44, 22);
+}
+.content:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(106, 255, 173);
+  font-size: large;
+}
+.capsules span {
+  border: 1px solid rgb(4, 58, 33);
+  padding: 2px 14px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: "Baloo 2", sans-serif;
+  margin-right: 10px;
+  color: white;
+  transition: all 0.3s ease; /* smooth animation */
+}
+.capsules span:hover {
+  transform: scale(1.2); /* zoom effect */
+  box-shadow: 0 0 15px #00ff88; /* glow effect */
+  background-color: #02391e; /* optional: greenish bg on hover */
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2); /* zoom effect */
+  text-shadow: 0 0 15px #00ff91; /* glow effect */
+  /* background-color: #02391e; optional: greenish bg on hover */
+  cursor: pointer;
+}
+.content1:hover{
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(106, 255, 173);
+  font-size: medium; 
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(4, 44, 22);
+}
+.site-footer {
+  background-color: #000000; /* Dark greenish */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid rgb(2, 32, 18);
+}
+.site-footer:hover{
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgb(4, 44, 22);
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  cursor: pointer;
+}
+.footer-content:hover{
+  transform: scale(1.01);
+  text-shadow: 0 0 10px rgb(0, 255, 128);
+  font-size: medium;
+}
+
+.footer-links {
+  margin-top: 1px;
+}
+
+.footer-links a {
+  color: #00ff99;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 10px rgb(106, 255, 173);
+  font-size: 30px;
+}

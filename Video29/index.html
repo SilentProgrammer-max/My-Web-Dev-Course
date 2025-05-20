@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #eaf1f7;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background: white;
+        border-radius: 15px;
+        width: 320px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        /* overflow: hidden;
+        padding: 2p; */
+      }
+
+      .card img {
+        width: 100%;
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 10px; */
+        display: block;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .tags {
+        display: flex;
+        gap: 10px;
+        /* margin-bottom: 10px; */
+      }
+
+      .tags span {
+        background: #e0ecf7;
+        color: #0077b6;
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+
+      .card-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .card-text {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .read-more {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #cce4ff;
+        color: #0066cc;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 14px;
+        transition: background 0.3s;
+      }
+
+      .image-wrapper {
+        padding: 8px;
+      }
+
+      .image-wrapper img {
+        border-radius: 16px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Card.png is a file which contains a card Image.
+    Write html and css code to design this card -->
+    <div class="card">
+      <div class="image-wrapper">
+        <img src="https://www.shutterstock.com/image-photo/hands-typing-on-laptop-programming-600nw-2480023489.jpg" />
+</div>
+      <div class="card-body">
+        <div class="tags">
+          <span>Python</span>
+          <span>AI</span>
+        </div>
+        <div class="card-title">Code the future</div>
+        <div class="card-text">
+          Start your 365day journey with Python, AI, and web development. Learn,
+          build, repeat.
+        </div>
+        <a href="#" class="read-more">ReadMore</a>
+      </div>
+    </div>
+  </body>
+</html>

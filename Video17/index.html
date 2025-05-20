@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: aquamarine;
+        }
+        .aquamarine{
+            background-color: aquamarine;
+        }
+        /* ID selector */
+        #greenyellow{
+            background-color: greenyellow;
+        }
+        /* Child Selectors */
+        div > p {
+            background-color: pink;
+            color: black
+        }
+        /* Descendant selector */
+        div p {
+            background-color: pink;
+            color: black
+        }
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow
+        }
+        a:link{
+            color:aquamarine
+        }
+        a:active{
+            background: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <P>I am second</P>
+    </main>
+    <div id="greenyellow">
+        I a ma div
+    </div>
+    <div class="aquamarine">
+        <article>
+        <p>I am a div</p>
+        </article>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur molestiae repellendus doloremque ullam voluptas asperiores. Iste odit qui vitae debitis veniam aperiam soluta vel, optio, nesciunt incidunt, eveniet velit ut.</p>
+        <p>two</p>
+    </div>
+    <a href="https://www.youtube.com">Youtube</a>
+    <a href="https://www.facebook2.com">Facebook</a>
+</body>
+</html>

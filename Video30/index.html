@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: rgb(0, 255, 170);
+            --seccolor:rgb(180, 252, 218);
+            --defpad: 20px;
+            --defop: 0.9;
+        }
+        *{
+            margin: 0;
+            padding:0 ;
+        }
+      .nav{
+        background: var(--color);
+        border-radius: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        border: 12px solid var(--seccolor);
+      }
+      ul{
+        display: flex;
+      }
+      ul li{
+        opacity: var(--defop);
+        list-style: none; 
+        padding: var(--defpad);
+        margin: 1px;
+      }
+      ul li:first-child{
+        --color: rgb(250, 112, 255);
+        background-color: var(--color);
+        border-radius: 10px;
+      }
+      .container{
+        background-color: var(--seccolor);
+      }
+      .radius{
+        border-radius: 20px;
+      }
+      ul div:first-child{
+        background-color: yellowgreen;
+      }
+      ul div:nth-child(2){
+        background-color: rgb(0, 163, 109);
+      }
+      ul div:nth-child(3){
+        background-color: antiquewhite;
+      }
+      ul div:last-child{
+        background-color: pink;
+      }
+      ul div{
+        background-color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="radius">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis quo sed fugiat nulla! Iusto ad inventore aspernatur illum dolorum id, architecto repudiandae excepturi delectus! Ut molestiae alias quibusdam minima consequuntur accusamus eligendi doloribus deleniti aut quae. Excepturi suscipit eaque modi. Minus placeat blanditiis hic.
+    </div>
+    <div>
+        <nav>
+            <ol>
+                <li>1. Home</li>
+                <li>2. Blog</li>
+                <li>3. Articles</li>
+                <li>4. Contact Me</li>
+                <li>5. About Me</li>
+            </ol>
+            <ul>
+                <div class="div">
+                <div>
+                <a href="http://www.google.com">Google</a>
+                </div>
+                <div>
+                <a href="http://www.youtube.com">Youtube</a>
+                </div>
+                <div>
+                <a href="http://www.facebook.com">Facebook</a></div>
+                <div>
+                <a href="http://www.instagram.com">Instagram</a></div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

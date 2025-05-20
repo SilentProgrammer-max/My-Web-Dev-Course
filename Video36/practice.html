@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just for work</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(3, 7, 22);
+      }
+
+      .navbar {
+        background-color: rgb(8, 8, 26); /* Dark blue/grey */
+        color: rgb(255, 210, 125);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+      }
+      .navbar:hover{
+        background-color: rgb(32, 32, 48);
+        transform: scale(1.01);
+        box-shadow: 0 0 10px #6f56ff;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .logo:hover{
+        background-color: rgb(32, 32, 48);
+        transform: scale(1.01);
+        box-shadow: 0 0 10px #6f56ff;
+        color: white;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      .nav-links li a {
+        color: rgb(255, 210, 125);
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .nav-links li a:hover {
+        color: #ffffff; /* Light yellow on hover */
+        transform: scale(1.01);
+        box-shadow: 0 0 10px #6f56ff;
+      }
+      .p {
+        color: rgb(255, 198, 123);
+        padding: 30px;
+        border: 1px solid rgb(32, 32, 48);
+        border-radius: 20px;
+        font-size: 15px;
+        margin: 50px;
+      }
+      p:hover {
+        background-color: rgb(32, 32, 48);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow: #6df5ff;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #6f56ff;
+      }
+      .p::before {
+        content: "AyeshaTechX ";
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .p1 {
+        color: rgb(255, 198, 123);
+        border: 1px solid rgb(32, 32, 48);
+        padding: 30px;
+        border-radius: 20px;
+        margin: 50px;
+      }
+      .form-container {
+        background: rgb(0, 0, 22);
+        max-width: 400px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+      .form-container:hover{
+        background-color: rgb(32, 32, 48);
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #6f56ff;
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+        
+      }
+      .form-container h2:hover{
+        background-color: rgb(32, 32, 48);
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #6f56ff;
+        color: #ffffff;
+      }
+      
+
+      .form-container label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      .form-container input,
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+      }
+
+      .form-container button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background: #13122e;
+        color: white;
+        border: 1px solid rgb(32, 32, 48);
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .form-container button:hover {
+        background: rgb(32, 32, 48);
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #6f56ff;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <div class="logo">AyeshaTechX</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Article</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="img">
+      <img
+        src="https://miro.medium.com/v2/resize:fit:1400/1*C0jZ3rwaV_wD8jOEQ8fW9w.jpeg"
+        alt=""
+        height="200px"
+        width="100%"
+      />
+    </div>
+    <div>
+      <p class="p">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+        molestias expedita amet dignissimos, saepe sint temporibus eaque
+        adipisci qui voluptas quisquam dolorem deleniti tempora cum delectus hic
+        quam distinctio vel at consequuntur nesciunt nobis voluptatibus nulla
+        doloribus. Molestias placeat aspernatur, ullam maiores veritatis magni
+        sapiente reiciendis facere, veniam, eaque temporibus.
+      </p>
+    </div>
+    <div>
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sit
+        obcaecati, eius earum qui laudantium nostrum in quo ex iusto. Minus
+        dignissimos error quasi quas iste natus tempore aliquid, illo dolores
+        inventore vitae vero, voluptates consequuntur accusamus perferendis
+        fugiat distinctio, maxime maiores eum aperiam numquam. Minima quam
+        nesciunt in magnam.
+      </p>
+    </div>
+    <div class="form-container">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your fullname"/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"/>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="type message here"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
