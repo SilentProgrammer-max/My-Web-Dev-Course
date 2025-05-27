@@ -8,7 +8,8 @@ body {
   background: #000;
   max-width: 100%;
 }
-body, .main {
+body,
+.main {
   margin: 0;
   padding: 0;
 }
@@ -37,7 +38,7 @@ nav {
   height: 60px;
   display: flex;
   justify-content: space-between; /* Logo on left, buttons on right */
-  align-items: center;            /* Vertically center everything */
+  align-items: center; /* Vertically center everything */
   /* overflow-x: hidden; */
 }
 nav > span {
@@ -48,7 +49,7 @@ nav > span {
 nav > div {
   /* Container holding your two buttons */
   display: flex;
-  gap: 15px;       /* space between English and Sign In buttons */
+  gap: 15px; /* space between English and Sign In buttons */
   align-items: center; /* vertical alignment */
 }
 
@@ -66,7 +67,7 @@ nav > div {
   border-radius: 4px;
   cursor: pointer;
 }
-.btn1:hover{
+.btn1:hover {
   filter: brightness(0.9);
 }
 nav img {
@@ -175,17 +176,27 @@ nav button {
 .secImg {
   position: relative;
 }
+
 .secImg img {
   width: 555px;
   position: relative;
   z-index: 10;
 }
+
 .secImg video {
   position: absolute;
-  top: 51px;
+  top: 80px;
   right: 0;
-  width:555px;
+  width: 555px;
+  height: 250px;
 }
+.vid video {
+    height: 300px;
+    width: 560px;
+    overflow-y: auto;
+    top: 70px;
+}
+
 .first > div {
   display: flex;
   flex-direction: column;
@@ -261,7 +272,7 @@ nav button {
   align-items: center;
   justify-content: center;
   gap: 9px;
-  padding: 9px 0 0 0 ;
+  padding: 9px 0 0 0;
 }
 .btn-red1 {
   background-color: red;
@@ -275,7 +286,7 @@ nav button {
 .btn-red1:hover {
   filter: brightness(0.9);
 }
-.questions a{
+.questions a {
   color: white;
 }
 .footer a {
@@ -301,37 +312,38 @@ footer .questions {
 .footer a:first-child {
   color: #acacac;
 }
-.footer a:nth-child(2){
+.footer a:nth-child(2) {
   color: #acacac;
 }
-.footer a:nth-child(3){
+.footer a:nth-child(3) {
   color: #acacac;
 }
-.footer a:nth-child(4){
+.footer a:nth-child(4) {
   color: #acacac;
 }
-.botom{
-margin: auto;
-padding: 50px 0 0 0 ;
+.botom {
+  margin: auto;
+  padding: 50px 0 0 0;
 }
-.foot{
-  padding: 50px 0 0 0 ;
+.foot {
+  padding: 50px 0 0 0;
 }
-.footbig{
+.footbig {
   color: #bbbbbb;
   font-size: 15px;
 }
-.footsmall{
+.footsmall {
   color: grey;
   padding: 30px 0 0 0;
   font-size: 13px;
 }
-.footsmall a { color: #3467c5; }
+.footsmall a {
+  color: #3467c5;
+}
 @media screen and (max-width: 1300px) {
   nav {
     max-width: 90vw;
   }
-
   .first {
     flex-wrap: wrap;
   }
@@ -341,11 +353,56 @@ padding: 50px 0 0 0 ;
   }
 
   .secImg video {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    width: 400px;
+    height: 134px;
     width: 305px;
+    height: 140px;
+  }
+  .secImg1 img {
+    width: 305px;
+  }
+  .vid video {
+    height: 160px;
+    width: 300px;
+    overflow-y: auto;
+    top: 40px;
+  }
+  .span {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+    font-weight: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .main img {
+    width: 100px;
+  }
+  .font {
+    font-size: 10px;
+    padding: 10px 0 0;
+  }
+  .faqbox {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 30px;
+    padding: 15px;
+    max-width: 90vw;
+    margin: 7px auto;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
   }
 
   .hero > :nth-child(1) {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .hero > :nth-child(2) {
@@ -378,40 +435,35 @@ padding: 50px 0 0 0 ;
     align-items: center;
   }
 }
-
-@media screen and (max-width: 1300px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-}
-
-.footer a {
-  font-size: 14px;
-  color: white;
-}
-
-.footer-item {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-}
 @media screen and (max-width: 1300px) {
   nav {
     max-width: 90vw;
+    overflow:auto;
   }
 
   .first {
     flex-wrap: wrap;
   }
+  .main {
+    background-size: max(1350px, 100vw);;
+  }
+  .btn {
+    padding: 2px 3px 3px 3px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
 
   .secImg img {
     width: 305px;
+    height: 250px;
   }
 
   .secImg video {
     width: 305px;
+    overflow: hidden;
   }
 
   .hero > :nth-child(1) {
@@ -433,10 +485,28 @@ padding: 50px 0 0 0 ;
     justify-content: center;
     gap: 16px;
   }
+  .hero-buttons input {
+    padding: 10px 130px 10px 10px;
+  }
+  .hero-buttons1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero-buttons1 input {
+    padding: 10px 200px 10px 10px;
+    font-size: 10px;
+  }
+  .faq h2 {
+    font-size: 12px;
+    padding: 1px 10px 0 0;
+  }
 
   .faq h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
   }
 
   footer {
