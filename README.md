@@ -60,6 +60,5 @@
 This is not just a course — it’s a **journey from zero to web hero**! 🌟 Start small, grow daily, build big. You’ll be amazed by how much you can do with the web 🕸️💫
 
 ---
-
 🚀 Let’s build the web — one line of code at a time!  
 **#HappyCoding 👩‍💻❤️🧠🌐🔥**
